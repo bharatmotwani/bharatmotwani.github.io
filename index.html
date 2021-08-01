@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gold Medalist in Olympics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+<body>
+
+<header>
+  <div id="slideShow" class="carousel slide" data-ride="carousel">
+    <script>
+    $('.carousel').carousel({
+      interval: 10000
+    })
+    </script>
+    <div class="carousel-inner" role="listbox">
+      <!-- SLIDE ONE -->
+      <div class="carousel-item active" style="background-image: url('images/Background.jpg')" role="option">
+        <svg width="500" height="500" id="annotation1"></svg>
+        <div class="carousel-caption d-none d-md-block" id="scene1">
+          <div id="chart1" class="chart">
+            <script src="scenes/scene-1.js"></script>
+          </div>
+          <h2 class="scene1">Olympics (2010)</h2>
+          <p class="lead">
+            <p class="content">The modern Olympic Games are leading international sporting events featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions. It comprises all the Games from Athens 1986 to Rio 2016.
+          <br/>It became matured in 2010. As seen here, Canada was overwhelmingly dominating with little in the way of real competition
+              <br/>Having scored more than four times the runner-up country that year, It rose as a leading country in 2010.</p>
+            <p>Data captured from kaggle (<a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results">Olympics History</a>).</p>
+            <p>In 2010 Olympics there were total <strong>174 gold medals.</strong></p>
+          </p>
+        </div>
+      </div>
+
+
+      <!-- SLIDE TWO -->
+      <div class="carousel-item" style="background-image: url('images/Background.jpg')" role="option">
+        <svg width="500" height="500" id="annotation2"></svg>
+        <div class="carousel-caption d-none d-md-block" id="scene2">
+          <div id="chart2" class="chart">
+            <script src="scenes/scene-2.js"></script>
+          </div>
+          <h2 class="scene2">Olympics (2012)</h2>
+          <p class="lead">
+            <p class="content">Two years later, The increase in gold medals was 28. While Canada still led the pack, Russia lagging with 32 gold medals had carved out with its own space in the competition as compared to the last Olympics where it could only win 6. Other countries were still struggling with numbers.</p>
+          <p>In 2012 Olympics there were total <strong>202 gold medals.</strong></p>
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE THREE -->
+      <div class="carousel-item" style="background-image: url('images/Background.jpg')" role="option">
+        <svg width="500" height="500" id="annotation3"></svg>
+        <div class="carousel-caption d-none d-md-block" id="scene3">
+
+          <div class="chart">
+            <script src="scenes/scene-3.js"></script>
+          </div>
+          <h2 class="scene3">Olympics (2014)</h2>
+          <p class="lead">
+            <p class="content">The picture in 2014 now reflects the turn-around year of the Olympics, where the United States emerged as an incredibly robust and competitive player. The United States secured 145 gold medals, On the contrary, world number one till the last Olympics Canada secured only one. Although old countries maintained their positions in the league, few more countries emerged and became part of the race.</p>
+          <p>In 2014 Olympics there were total <strong>632 gold medals.</strong></p>
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE FOUR -->
+      <div class="carousel-item" style="background-image: url('images/Background.jpg')" role="option">
+        <svg width="500" height="500" id="annotation4"></svg>
+        <div class="carousel-caption d-none d-md-block" id="scene4">
+          <div class="chart">
+            <script src="scenes/scene-4.js"></script>
+          </div>
+          <h2 class="scene4">Olympics (2016)</h2>
+          <p class="lead">
+            <p class="content">In 2016, While the United States again maintained the first position and secured astonishing 139 gold medals, significant progress was seen among the growth of other countries. Great Britain rose up as the world’s second and Russia as the world’s third in the league. Canada again could not cope up and remained in a lower position.  </p>
+          <p>In 2016 Olympics there were total <strong>664 gold medals.</strong></p>
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE FIVE -->
+      <div class="carousel-item" style="background-image: url('images/Background.jpg')" role="option">
+        <svg width="500" height="500" id="annotation5"></svg>
+        <div class="carousel-caption d-none d-md-block" id="scene5">
+          <div class="chart">
+            <script src="scenes/scene-5.js"></script>
+          </div>
+          <h2 class="scene5">Olympics(2010-2016)</h2>
+          <p class="lead">
+          <p class="content">If we take a glance at overall data from 2010-2016, The number of athletes, events, and nations has grown enormously. Also, All nations tried to maintain their positions. The United States once rose in 2012 never stopped and maintained its first position. The size of Olympians has become more extreme over time. In most sports, this means taller and heavier, but in a few sports such as gymnastics, athletes have become smaller.</p>
+          <a href="drill-down-data.html">Drill Down to complete data of Olympics ( 2010-2016)</a>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control-next" href="#slideShow" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+   <!-- <a class="carousel-control-prev" href="#slideShow" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>-->
+  </div>
+</header>
+
+</body>
+</html>
