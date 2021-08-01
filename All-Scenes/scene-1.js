@@ -143,7 +143,7 @@ const annotation1 = [
 const makeAnnotation1 = d3.annotation()
     .annotations(annotation1)
 
-/*d3.select("#annotation1")
+d3.select("#annotation1")
     .append("g")
     .attr('class', 'annotation-group')
     .call(makeAnnotation1)
@@ -153,7 +153,7 @@ d3.select(".annotation-group")
     .duration(4000)
     .tween('text',function(d) {
         return "199";
-    })*/
+    })
 
 d3.select(self.frameElement)
     .style("height", diameter + "px");
