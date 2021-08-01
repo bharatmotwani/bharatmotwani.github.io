@@ -52,17 +52,18 @@ tooltip
   .style("opacity", 0)
 }
 
-var diameter = 500;
+var diameterHeight = window.innerHeight/2;
+
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var bubble = d3.pack(dataset)
-    .size([diameter, diameter])
+    .size([diameterHeight, diameterHeight])
     .padding(1.5);
 
 var svg = d3.select("#scene1")
     .append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", diameterHeight)
+    .attr("height", diameterHeight)
     .attr("class", "bubble")
 
 var nodes = d3.hierarchy(dataset)
@@ -154,3 +155,6 @@ d3.select(".annotation-group")
     .tween('text',function(d) {
         return "199";
     })
+
+d3.select(self.frameElement)
+    .style("height", diameterHeight);
