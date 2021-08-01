@@ -154,6 +154,3 @@ d3.select(".annotation-group")
     .tween('text',function(d) {
         return "199";
     })
-
-d3.select(self.frameElement)
-    .style("height", diameter + "px");
