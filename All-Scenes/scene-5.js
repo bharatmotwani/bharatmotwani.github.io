@@ -286,9 +286,9 @@ const annotation5 = [
 const makeAnnotation5 = d3.annotation()
     .annotations(annotation5)
 
-d3.select("#annotation5")
+/*d3.select("#annotation5")
     .append("g")
-    .call(makeAnnotation5)
+    .call(makeAnnotation5)*/
 
 
 d3.select(self.frameElement)
