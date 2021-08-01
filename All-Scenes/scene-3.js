@@ -181,6 +181,3 @@ const makeAnnotation3 = d3.annotation()
 d3.select("#annotation3")
     .append("g")
     .call(makeAnnotation3)
-
-d3.select(self.frameElement)
-    .style("height", diameter + "px");
