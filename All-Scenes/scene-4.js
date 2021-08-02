@@ -1,63 +1,63 @@
 dataset = {
     'children': [
-        {'Country':'Argentina','Medals':21,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Armenia','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Australia','Medals':23,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Azerbaijan','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Bahamas','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Bahrain','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Belarus','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Belgium','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Brazil','Medals':36,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Canada','Medals':4,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'China','Medals':47,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Colombia','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Cote dIvoire','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Croatia','Medals':7,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Cuba','Medals':5,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Czech Republic','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Denmark','Medals':15,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Ethiopia','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Ethiopia','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Fiji','Medals':13,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'France','Medals':20,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Georgia','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Germany','Medals':49,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Great Britain','Medals':64,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Greece','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Hungary','Medals':12,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Indonesia','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Iran','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Italy','Medals':8,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Jamaica','Medals':11,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Japan','Medals':17,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Jordan','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Kazakhstan','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Kenya','Medals':6,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Kosovo','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Netherlands','Medals':9,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'New Zealand','Medals':6,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'North Korea','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Poland','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Puerto Rico','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Romania','Medals':4,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Russia','Medals':52,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Serbia','Medals':14,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Singapore','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Slovakia','Medals':3,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Slovenia','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Switzerland','Medals':6,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Spain','Medals':9,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'South Africa','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'South Korea','Medals':13,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Sweden','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Tajikistan','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Thailand','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Turkey','Medals':1,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Ukraine','Medals':2,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'United States','Medals':139,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Uzbekistan','Medals':4,'Location':'Rio de Janeiro, Brazil'},
-        {'Country':'Vietnam','Medals':1,'Location':'Rio de Janeiro, Brazil'}
+        {'Country':'Argentina','Medals':21,'Location':'Rio de Janeiro, Brazil','Male':19, 'Female':2},
+        {'Country':'Armenia','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Australia','Medals':23,'Location':'Rio de Janeiro, Brazil','Male':3, 'Female':20},
+        {'Country':'Azerbaijan','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Bahamas','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Bahrain','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Belarus','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Belgium','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':1},
+        {'Country':'Brazil','Medals':36,'Location':'Rio de Janeiro, Brazil','Male':33, 'Female':3},
+        {'Country':'Canada','Medals':4,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':3},
+        {'Country':'China','Medals':46,'Location':'Rio de Janeiro, Brazil','Male':16, 'Female':30},
+        {'Country':'Chinese Taipei','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Colombia','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':2},
+        {'Country':'Cote dIvoire','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Croatia','Medals':7,'Location':'Rio de Janeiro, Brazil','Male':5, 'Female':2},
+        {'Country':'Cuba','Medals':5,'Location':'Rio de Janeiro, Brazil','Male':5, 'Female':0},
+        {'Country':'Czech Republic','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Denmark','Medals':15,'Location':'Rio de Janeiro, Brazil','Male':15, 'Female':0},
+        {'Country':'Ethiopia','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Fiji','Medals':13,'Location':'Rio de Janeiro, Brazil','Male':13, 'Female':0},
+        {'Country':'France','Medals':20,'Location':'Rio de Janeiro, Brazil','Male':16, 'Female':4},
+        {'Country':'Georgia','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':2, 'Female':0},
+        {'Country':'Germany','Medals':49,'Location':'Rio de Janeiro, Brazil','Male':20, 'Female':29},
+        {'Country':'Great Britain','Medals':64,'Location':'Rio de Janeiro, Brazil','Male':35, 'Female':29},
+        {'Country':'Greece','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':2},
+        {'Country':'Hungary','Medals':12,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':11},
+        {'Country':'Indonesia','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':1},
+        {'Country':'Iran','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':3, 'Female':0},
+        {'Country':'Italy','Medals':8,'Location':'Rio de Janeiro, Brazil','Male':7, 'Female':1},
+        {'Country':'Jamaica','Medals':11,'Location':'Rio de Janeiro, Brazil','Male':9, 'Female':2},
+        {'Country':'Japan','Medals':17,'Location':'Rio de Janeiro, Brazil','Male':9, 'Female':8},
+        {'Country':'Jordan','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Kazakhstan','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':3, 'Female':0},
+        {'Country':'Kenya','Medals':6,'Location':'Rio de Janeiro, Brazil','Male':3, 'Female':3},
+        {'Country':'Kosovo','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Netherlands','Medals':9,'Location':'Rio de Janeiro, Brazil','Male':7, 'Female':2},
+        {'Country':'New Zealand','Medals':6,'Location':'Rio de Janeiro, Brazil','Male':5, 'Female':1},
+        {'Country':'North Korea','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':1},
+        {'Country':'Poland','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':3},
+        {'Country':'Puerto Rico','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Romania','Medals':4,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':4},
+        {'Country':'Russia','Medals':52,'Location':'Rio de Janeiro, Brazil','Male':41, 'Female':11},
+        {'Country':'Serbia','Medals':14,'Location':'Rio de Janeiro, Brazil','Male':14, 'Female':0},
+        {'Country':'Singapore','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Slovakia','Medals':3,'Location':'Rio de Janeiro, Brazil','Male':3, 'Female':0},
+        {'Country':'Slovenia','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':1},
+        {'Country':'Switzerland','Medals':6,'Location':'Rio de Janeiro, Brazil','Male':6, 'Female':0},
+        {'Country':'Spain','Medals':9,'Location':'Rio de Janeiro, Brazil','Male':5, 'Female':4},
+        {'Country':'South Africa','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':1},
+        {'Country':'South Korea','Medals':13,'Location':'Rio de Janeiro, Brazil','Male':6, 'Female':7},
+        {'Country':'Sweden','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':2},
+        {'Country':'Tajikistan','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Thailand','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':0, 'Female':2},
+        {'Country':'Turkey','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0},
+        {'Country':'Ukraine','Medals':2,'Location':'Rio de Janeiro, Brazil','Male':2, 'Female':0},
+        {'Country':'United States','Medals':139,'Location':'Rio de Janeiro, Brazil','Male':54, 'Female':85},
+        {'Country':'Uzbekistan','Medals':4,'Location':'Rio de Janeiro, Brazil','Male':4, 'Female':0},
+        {'Country':'Vietnam','Medals':1,'Location':'Rio de Janeiro, Brazil','Male':1, 'Female':0}
     ]};
 
 var tooltip4 = d3.select("#scene4")
@@ -77,8 +77,12 @@ var showTooltip4 = function(d) {
         .style("opacity", 1)
         .html("Country: <strong> " + d.data.Country  + "</strong>"
             + "<br/>Gold medals: <strong>" + d.data.Medals + "</strong>"
-            + "<br/>Men won: <strong>347</strong>"
-            + "<br/>Women won: <strong>318</strong>"
+            + "<br/>Men won : <strong>" +  d.data.Male + "</strong>"
+            + "<br/>Women won : <strong>" + d.data.Female + "</strong>"
+            + "</br/>-------------------"
+            + "<br/>Worldwide Gold Medals: <strong>665</strong>"
+            + "<br/>Worldwide Men won: <strong>347</strong>"
+            + "<br/>Worldwide Women won: <strong>318</strong>"
             + "<br/>Olympics held in: <strong>" + d.data.Location + "</strong>" )
         .style("left", (d3.mouse(this)[0]) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
@@ -97,17 +101,17 @@ var hideTooltip4 = function(d) {
     d3.select(this).select("circle").style("stroke", "transparent");
 }
 
-var diameter = window.innerHeight/2;
+var size = window.innerHeight/2;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var bubble = d3.pack(dataset)
-    .size([diameter, diameter])
+    .size([size, size])
     .padding(1.5);
 
 var svg = d3.select("#scene4")
     .append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", size)
+    .attr("height", size)
     .attr("class", "bubble");
 
 var nodes = d3.hierarchy(dataset)
@@ -178,7 +182,7 @@ const annotation4 = [
         },
         color: ["white"],
         x: 300,
-        y: 200,
+        y: 230,
         dy: 90,
         dx: 90
     }
@@ -193,4 +197,4 @@ d3.select("#annotation4")
     .call(makeAnnotation4)
 
 d3.select(self.frameElement)
-    .style("height", diameter);
+    .style("height", size);
