@@ -153,37 +153,43 @@ dataset = {
     ]};
 
 var tooltip5 = d3.select("#scene5")
-.append("div")
-  .style("opacity", 0)
-  .attr("class", "tooltip")
-  .style("background-color", "black")
-  .style("border-radius", "5px")
-  .style("padding", "10px")
-  .style("color", "white")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "black")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("color", "white")
 
 var showTooltip5 = function(d) {
-tooltip5
-  .transition()
-  .duration(200)
-tooltip5
-  .style("opacity", 1)
-  .html("Year: "+d.data.Year + "<br/>Country: " + d.data.Country + "<br/>Gold Medals: " + d.data.Medals + "<br/>Location: " + d.data.Location)
-  .style("left", (d3.mouse(this)[0]) + "px")
-  .style("top", (d3.mouse(this)[1]) + "px")
+    tooltip5
+        .transition()
+        .duration(200)
+    tooltip5
+        .style("opacity", 1)
+        .html("Country: <strong> " + d.data.Country  + "</strong>"
+            + "<br/>Gold medals: <strong>" + d.data.Medals + "</strong>"
+            + "<br/>Men won: <strong>886</strong>"
+            + "<br/>Women won: <strong>787</strong>"
+            + "<br/>Olympics held in: <strong>" + d.data.Location + "</strong>" )
+        .style("left", (d3.mouse(this)[0]) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
+    d3.select(this).select("circle").style("stroke", "white").style("stroke-width", "3px");
 }
 var moveTooltip5 = function(d) {
-tooltip5
-  .style("left", (d3.mouse(this)[0]) + "px")
-  .style("top", (d3.mouse(this)[1]) + "px")
+    tooltip5
+        .style("left", (d3.mouse(this)[0]) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
 }
 var hideTooltip5 = function(d) {
-tooltip5
-  .transition()
-  .duration(200)
-  .style("opacity", 0)
+    tooltip5
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    d3.select(this).select("circle").style("stroke", "transparent");
 }
 
-var diameter = 500;
+var diameter = window.innerHeight/2;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var bubble = d3.pack(dataset)
@@ -267,7 +273,7 @@ node.append("text")
 const annotation5 = [
     {
         note: {
-            title: "Drill Down using link",
+            title: "Drill Down using hyperlink",
             lineType: "none"
         },
         connector: {
@@ -275,8 +281,12 @@ const annotation5 = [
             endScale: 4
         },
         color: ["white"],
-        x: 260,
-        y: 300,
+        //x: 260,
+        //y: 300,
+        //dy: 90,
+        //dx: 90
+        x: 275,
+        y: 200,
         dy: 90,
         dx: 90
     }
@@ -291,4 +301,4 @@ d3.select("#annotation5")
     .call(makeAnnotation5)
 
 d3.select(self.frameElement)
-    .style("height", diameter + "px");
+    .style("height", diameter);
