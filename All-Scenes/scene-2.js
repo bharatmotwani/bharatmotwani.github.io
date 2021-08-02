@@ -1,25 +1,25 @@
 dataset = {
     'children': [
-        {'Country':'Austria','Medals':4,'Location':'Sochi, Russia'},
-        {'Country':'Belarus','Medals':5,'Location':'Sochi, Russia'},
-        {'Country':'Canada','Medals':59,'Location':'Sochi, Russia'},
-        {'Country':'China','Medals':3,'Location':'Sochi, Russia'},
-        {'Country':'Czech Republic','Medals':2,'Location':'Sochi, Russia'},
-        {'Country':'Finland','Medals':2,'Location':'Sochi, Russia'},
-        {'Country':'France','Medals':4,'Location':'Sochi, Russia'},
-        {'Country':'Germany','Medals':15,'Location':'Sochi, Russia'},
-        {'Country':'Great Britain','Medals':1,'Location':'Sochi, Russia'},
-        {'Country':'Japan','Medals':1,'Location':'Sochi, Russia'},
-        {'Country':'Neitherland','Medals':13,'Location':'Sochi, Russia'},
-        {'Country':'Norway','Medals':18,'Location':'Sochi, Russia'},
-        {'Country':'Poland','Medals':4,'Location':'Sochi, Russia'},
-        {'Country':'Russia','Medals':33,'Location':'Sochi, Russia'},
-        {'Country':'Slovakia','Medals':3,'Location':'Sochi, Russia'},
-        {'Country':'South Korea','Medals':7,'Location':'Sochi, Russia'},
-        {'Country':'Sweden','Medals':8,'Location':'Sochi, Russia'},
-        {'Country':'Switzerland','Medals':6,'Location':'Sochi, Russia'},
-        {'Country':'Ukraine','Medals':4,'Location':'Sochi, Russia'},
-        {'Country':'USA','Medals':10,'Location':'Sochi, Russia'}
+        {'Country':'Austria','Medals':4,'Location':'Sochi, Russia','Male':2, 'Female':2},
+        {'Country':'Belarus','Medals':5,'Location':'Sochi, Russia','Male':1, 'Female':4},
+        {'Country':'Canada','Medals':59,'Location':'Sochi, Russia','Male':31, 'Female':28},
+        {'Country':'China','Medals':3,'Location':'Sochi, Russia','Male':0, 'Female':3},
+        {'Country':'Czech Republic','Medals':2,'Location':'Sochi, Russia','Male':0, 'Female':2},
+        {'Country':'Finland','Medals':2,'Location':'Sochi, Russia','Male':2, 'Female':0},
+        {'Country':'France','Medals':4,'Location':'Sochi, Russia','Male':4, 'Female':0},
+        {'Country':'Germany','Medals':15,'Location':'Sochi, Russia','Male':11, 'Female':4},
+        {'Country':'Great Britain','Medals':1,'Location':'Sochi, Russia','Male':0, 'Female':1},
+        {'Country':'Japan','Medals':1,'Location':'Sochi, Russia','Male':1, 'Female':0},
+        {'Country':'Netherlands','Medals':13,'Location':'Sochi, Russia','Male':7, 'Female':6},
+        {'Country':'Norway','Medals':18,'Location':'Sochi, Russia','Male':11, 'Female':7},
+        {'Country':'Poland','Medals':4,'Location':'Sochi, Russia','Male':3, 'Female':1},
+        {'Country':'Russia','Medals':33,'Location':'Sochi, Russia','Male':26, 'Female':7},
+        {'Country':'Slovakia','Medals':3,'Location':'Sochi, Russia','Male':0, 'Female':3},
+        {'Country':'South Korea','Medals':7,'Location':'Sochi, Russia','Male':7, 'Female':0},
+        {'Country':'Sweden','Medals':8,'Location':'Sochi, Russia','Male':4, 'Female':4},
+        {'Country':'Switzerland','Medals':6,'Location':'Sochi, Russia','Male':4, 'Female':2},
+        {'Country':'Ukraine','Medals':4,'Location':'Sochi, Russia','Male':0, 'Female':4},
+        {'Country':'USA','Medals':10,'Location':'Sochi, Russia','Male':5, 'Female':5}
     ]};
 
 var tooltip2 = d3.select("#scene2")
@@ -39,8 +39,12 @@ var showTooltip2 = function(d) {
         .style("opacity", 1)
         .html("Country: <strong> " + d.data.Country  + "</strong>"
             + "<br/>Gold medals: <strong>" + d.data.Medals + "</strong>"
-            + "<br/>Men won: <strong>91</strong>"
-            + "<br/>Women won: <strong>111</strong>"
+            + "<br/>Men won : <strong>" +  d.data.Male + "</strong>"
+            + "<br/>Women won : <strong>" + d.data.Female + "</strong>"
+            + "</br/>-------------------"
+            + "<br/>Worldwide Gold Medals: <strong>202</strong>"
+            + "<br/>Worldwide Men won: <strong>91</strong>"
+            + "<br/>Worldwide Women won: <strong>111</strong>"
             + "<br/>Olympics held in: <strong>" + d.data.Location + "</strong>" )
         .style("left", (d3.mouse(this)[0]) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
@@ -59,17 +63,17 @@ var hideTooltip2 = function(d) {
     d3.select(this).select("circle").style("stroke", "transparent");
 }
 
-var diameter = window.innerHeight/2;
+var size = window.innerHeight/2;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var bubble = d3.pack(dataset)
-    .size([diameter, diameter])
+    .size([size, size])
     .padding(1.5);
 
 var svg = d3.select("#scene2")
     .append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", size)
+    .attr("height", size)
     .attr("class", "bubble");
 
 var nodes = d3.hierarchy(dataset)
@@ -140,7 +144,7 @@ const annotation2 = [
         },
         color: ["white"],
         x: 275,
-        y: 200,
+        y: 230,
         dy: 90,
         dx: 90
     }
@@ -155,4 +159,4 @@ d3.select("#annotation2")
     .call(makeAnnotation2)
 
 d3.select(self.frameElement)
-    .style("height", diameter);
+    .style("height", size);
