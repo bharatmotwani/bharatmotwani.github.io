@@ -22,48 +22,53 @@ dataset = {
     ]};
 
 var tooltip = d3.select("#scene1")
-.append("div")
-  .style("opacity", 0)
-  .attr("class", "tooltip")
-  .style("background-color", "black")
-  .style("border-radius", "5px")
-  .style("padding", "10px")
-  .style("color", "white")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "black")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("color", "white")
 
 var showTooltip = function(d) {
-tooltip
-  .transition()
-  .duration(200)
-tooltip
-  .style("opacity", 1)
-  .html("Country: " + d.data.Country + "<br/>Gold Medals: " + d.data.Medals + "<br/>Location: " + d.data.Location)
-  .style("left", (d3.mouse(this)[0]) + "px")
-  .style("top", (d3.mouse(this)[1]) + "px")
+    tooltip
+        .transition()
+        .duration(200)
+    tooltip
+        .style("opacity", 1)
+        .html("Country: <strong> " + d.data.Country  + "</strong>"
+            + "<br/>Gold medals: <strong>" + d.data.Medals + "</strong>"
+            + "<br/>Men won: <strong>97</strong>"
+            + "<br/>Women won: <strong>77</strong>"
+            + "<br/>Olympics held in: <strong>" + d.data.Location + "</strong>" )
+        .style("left", (d3.mouse(this)[0]) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px");
+    d3.select(this).select("circle").style("stroke", "white").style("stroke-width", "3px");
 }
 var moveTooltip = function(d) {
-tooltip
-  .style("left", (d3.mouse(this)[0]) + "px")
-  .style("top", (d3.mouse(this)[1]) + "px")
+    tooltip
+        .style("left", (d3.mouse(this)[0]) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
 }
 var hideTooltip = function(d) {
-tooltip
-  .transition()
-  .duration(200)
-  .style("opacity", 0)
+    tooltip
+        .transition()
+        .duration(200)
+        .style("opacity", 0)
+    d3.select(this).select("circle").style("stroke", "transparent");
 }
 
-var diameterHeight = window.innerHeight/2;
-
+var diameter = window.innerHeight/2;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var bubble = d3.pack(dataset)
-    .size([diameterHeight, diameterHeight])
+    .size([diameter, diameter])
     .padding(1.5);
 
 var svg = d3.select("#scene1")
     .append("svg")
-    .attr("width", diameterHeight)
-    .attr("height", diameterHeight)
+    .attr("width", diameter)
+    .attr("height", diameter)
     .attr("class", "bubble")
 
 var nodes = d3.hierarchy(dataset)
@@ -95,7 +100,7 @@ node.append("circle")
     })
     .style("fill", function(d,i) {
         return color(i);
-    });
+    })
 
 node.append("text")
     .attr("dy", ".2em")
@@ -121,11 +126,11 @@ node.append("text")
     })
     .attr("fill", "white");
 
+
 const annotation1 = [
     {
         note: {
-            title: "Canada",
-            label: "leading with 67 Medals.",
+            title: "Hover bubbles for details",
             lineType: "none"
         },
         connector: {
@@ -134,7 +139,7 @@ const annotation1 = [
         },
         color: ["white"],
         x: 300,
-        y: 300,
+        y: 200,
         dy: 90,
         dx: 90
     }
@@ -157,4 +162,4 @@ d3.select(".annotation-group")
     })
 
 d3.select(self.frameElement)
-    .style("height", diameterHeight);
+    .style("height", diameter);
